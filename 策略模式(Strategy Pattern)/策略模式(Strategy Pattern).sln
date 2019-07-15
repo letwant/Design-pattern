@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "策略模式(Strategy Pattern)", "策略模式(Strategy Pattern)\策略模式(Strategy Pattern).vcxproj", "{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Debug|x64.ActiveCfg = Debug|x64
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Debug|x64.Build.0 = Debug|x64
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Debug|x86.ActiveCfg = Debug|Win32
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Debug|x86.Build.0 = Debug|Win32
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Release|x64.ActiveCfg = Release|x64
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Release|x64.Build.0 = Release|x64
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Release|x86.ActiveCfg = Release|Win32
+		{1242A8C2-B7BA-4BDF-A0A3-FB5AE9B00659}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4022E8D9-44DA-473A-81AF-CC7A81FE3188}
+	EndGlobalSection
+EndGlobal
