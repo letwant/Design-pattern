@@ -1,32 +1,22 @@
 #include "concrete_strategy.h"
 #include "context.h"
-
-#ifndef SAFE_DELETE
-#define SAFE_DELETE(p) { if(p) {delete(p); (p)=NULL;}}
-
-#endif // !
+#include <memory>
+using namespace std;
 
 int main()
 {
-	IStragegy *bike = new BikeStrategy();
-	IStragegy *car = new CarStrategy();
-	IStragegy *train = new TrainStrategy();
+	unique_ptr<IStragegy> bike(new BikeStrategy());
+	unique_ptr<IStragegy> car (new CarStrategy());
+	unique_ptr<IStragegy> train (new TrainStrategy());
 
-	Context *bikeContext = new Context(bike);
-	Context *carContext = new Context(car);
-	Context *trainContext = new Context(train);
+	unique_ptr<Context> bikeContext( new Context(bike.get()));
+	unique_ptr<Context> carContext (new Context(car.get()));
+	unique_ptr<Context> trainContext (new Context(train.get()));
 
 	bikeContext->Travel();
 	carContext->Travel();
 	trainContext->Travel();
 
-	SAFE_DELETE(bike);
-	SAFE_DELETE(car);
-	SAFE_DELETE(train);
-
-	SAFE_DELETE(bikeContext);
-	SAFE_DELETE(carContext);
-	SAFE_DELETE(trainContext);
 	getchar();
 	return 0;
 }
