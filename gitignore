@@ -1,2 +1,3 @@
-*/.vs/*
-*/x64/*
+策略模式(Strategy Pattern)/.vs/*
+策略模式(Strategy Pattern)/x64/*
+*.exe
